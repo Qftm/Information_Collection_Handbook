@@ -1,4 +1,4 @@
-# Information Collection Handbook For Pentest
+# Information Collection For Pentest
 
 ## 声明
 ```
