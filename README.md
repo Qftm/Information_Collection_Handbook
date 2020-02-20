@@ -1,5 +1,4 @@
  **Author:** [Qftm](https://qftm.github.io/)
- **Blog:** https://qftm.github.io/
 
 "只有不努力的黑客，没有攻不破的系统"。在SRC漏洞挖掘或渗透测试中，信息收集占很大一部分，能收集到别人收集不到的资产，就能挖到别人挖不到的洞。
 
