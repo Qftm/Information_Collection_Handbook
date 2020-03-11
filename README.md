@@ -348,6 +348,8 @@ IP关联域名，大部分网站一个IP多个域名
 http://s.tool.chinaz.com/same?s
 
 http://dns.aizhan.com/
+
+https://webscan.cc/
 ```
 
 ## 资产搜索引擎
