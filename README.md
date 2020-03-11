@@ -392,8 +392,6 @@ dnsmaper
 dnsbrute
 Findomain
 fierce等
-
-
 ```
 
 个人推荐：`OneForAll`、`Layer`、`Sublist3r`、`subDomainsBrute`
@@ -443,13 +441,11 @@ Sublist3r也是一个比较常用的工具， 它能列举多种资源，如在G
 crt.sh: https://crt.sh
 censys: https://censys.io
 myssl：https://myssl.com
-
 ```
 
 ```
 crt:
 https://crt.sh/?q=baidu.com
-
 ```
 
 ![](img/1594459-20200119142032842-592842557.png)
@@ -458,8 +454,6 @@ https://crt.sh/?q=baidu.com
 ```
 censys:
 https://www.censys.io/certificates?q=baidu.com
-
-
 ```
 
 
@@ -474,8 +468,6 @@ https://www.censys.io/certificates?q=baidu.com
 ```
 Findomain
 Sublist3r（SSL Certificates）等
-
-
 ```
 
 #### Findomain
@@ -487,13 +479,11 @@ Certspotter
 Crt.sh
 Virustotal
 Sublist3r
-Facebook **
-Spyse (CertDB) *
+Facebook 
+Spyse (CertDB)
 Bufferover
 Threadcrow
-Virustotal with apikey **
-
-
+Virustotal with apikey 
 ```
 
 项目地址：`https://github.com/Edu4rdSHL/findomain`
@@ -524,8 +514,6 @@ MX记录      电子邮件交换记录，记录一个邮件域名对应的IP地�
 NS记录      域名服务器记录 ,记录该域名由哪台域名服务器解析
 PTR记录     反向记录，也即从IP地址到域名的一条记录
 TXT记录     记录域名的相关文本信息
-
-
 ```
 
 ### DNS注册信息
@@ -549,8 +537,6 @@ DNS服务器分为：`主服务器`、`备份服务器`和`缓存服务器`。�
 2) server dns.xx.yy.zz  #设定查询将要使用的DNS服务器
 3) ls xx.yy.zz          #列出某个域中的所有域名
 4) exit                 #退出
-
-
 ```
 
 漏洞检验-不存在漏洞
@@ -573,9 +559,6 @@ is incorrect, check the zone transfer security settings for bjfu.edu.cn on the D
 server at IP address 202.204.112.67.
 
 > exit
-
-
-
 ```
 
 漏洞检验-存在漏洞
@@ -584,9 +567,6 @@ server at IP address 202.204.112.67.
 > nslookup
 > server dns1.xxx.edu.cn
 > ls xxx.edu.cn
-
-
-
 ```
 
 ![](img/1594459-20200119142122378-365876425.png)
@@ -597,9 +577,6 @@ server at IP address 202.204.112.67.
 
 ```
 nmap --script dns-zone-transfer --script-args dns-zone-transfer.domain=xxx.edu.cn -p 53 -Pn dns.xxx.edu.cn
-
-
-
 ```
 
 ```
@@ -610,9 +587,6 @@ nmap --script dns-zone-transfer --script-args dns-zone-transfer.domain=xxx.edu.c
 -p 53 设置扫描53端口
 
 -Pn 设置通过Ping发现主机是否存活
-
-
-
 ```
 
 ![](img/1594459-20200119142135615-565066925.png)
@@ -625,8 +599,6 @@ nmap --script dns-zone-transfer --script-args dns-zone-transfer.domain=xxx.edu.c
 
 ```
 dig @dns.xxx.edu.cn axfr xxx.edu.cn
-
-
 ```
 
 `axfr` 是q-type类型的一种: axfr类型是Authoritative Transfer的缩写，指请求传送某个区域的全部记录。
@@ -657,9 +629,6 @@ UCloud
 世纪互联
 七牛云
 京东云等
-
-
-
 ```
 
 国外常见CDN
@@ -670,9 +639,6 @@ Limelight Networks(简称LLNW)
 AWS Cloud(亚马逊)
 Google(谷歌)
 Comcast(康卡斯特)
-
-
-
 ```
 
 ## 判断目标是否存在CDN
@@ -693,9 +659,6 @@ C:\Users\Qftm>ping www.jd.com
 C:\Users\Qftm>ping www.alibaba.com
 
 C:\Users\Qftm>ping www.dfle.com.cn
-
-
-
 ```
 
 ![](img/1594459-20200119142212459-2087766300.png)
@@ -712,9 +675,6 @@ C:\Users\Qftm>ping www.dfle.com.cn
 C:\Users\Qftm>nslookup www.dfle.com.cn 8.8.8.8
 
 C:\Users\Qftm>nslookup www.dfle.com.cn 114.114.114.114
-
-
-
 ```
 
 ![](img/1594459-20200119142328428-196307471.png)
@@ -723,9 +683,6 @@ C:\Users\Qftm>nslookup www.dfle.com.cn 114.114.114.114
 λ  Qftm >>>: nslookup www.baidu.com 8.8.8.8
 
 λ  Qftm >>>: nslookup www.baidu.com 114.114.114.114
-
-
-
 ```
 
 ![](img/1594459-20200119142343947-148948923.png)
@@ -748,9 +705,6 @@ Ping检测-站长工具 http://ping.chinaz.com/
 17CE https://www.17ce.com/
 
 ipip https://tools.ipip.net/newping.php (支持国内、国外)
-
-
-
 ```
 
 #### 站长工具
@@ -803,9 +757,6 @@ cdnplanet https://www.cdnplanet.com/tools/cdnfinder/ （查询可能比较慢）
 ipip https://tools.ipip.net/newping.php
 
 ASM https://asm.ca.com/en/ping.php
-
-
-
 ```
 
 测试站点：`www.yeah.net`
@@ -838,8 +789,6 @@ ASM https://asm.ca.com/en/ping.php
 
 ```
 https://phpinfo.me/bing.php
-
-
 ```
 
 ![](img/1594459-20200119142607848-1081123689.png)
@@ -892,9 +841,6 @@ viewdns https://viewdns.info/
 threatbook https://x.threatbook.cn/
 
 securitytrails https://securitytrails.com/
-
-
-
 ```
 
 ![](img/1594459-20200119142656200-2052041466.png)
@@ -958,8 +904,6 @@ shodan、FOFA、zoomeye
 端口：9200/9300 服务：elasticsearch   总结：远程代码执行
 端口：11211 服务：memcached 			总结：未授权访问
 端口：27017/27018 服务：mongodb 		总结：未授权访问/爆破
-
-
 ```
 
 详细参考：[掘安攻防实验室](https://mp.weixin.qq.com/s/Y0PPqyHysBPmgmDw2KmHYw)
@@ -984,8 +928,6 @@ IISPutScanner
 IISPutScanner增强版-DotNetScan v1.1 Beta
 
 masnmapscan
-
-
 ```
 
 ### 常用扫描工具使用
@@ -1005,8 +947,6 @@ masnmapscan
 扫描一个小范围 nmap 192.168.6.2-10
 扫描txt内的ip列表  nmap -iL text.txt
 扫描除某个目标外   nmap 192.168.6.1/24 -exclude 192.168.6.25
-
-
 ```
 
 * 绕过Firewalld扫描主机端口
@@ -1021,16 +961,12 @@ nmap -sU 192.33.6.128
 nmap -sF 192.33.6.128
 nmap -sX 192.33.6.128
 nmap -sN 192.33.6.128
-
-
 ```
 
 * 初步扫描端口信息
 
 ```
 nmap -T4 -A -v -Pn 192.168.1.1/24 -p 21,22,23,25,80,81,82,83,88,110,143,443,445,512,513,514,1433,1521,2082,2083,2181,2601,2604,3128,3306,3389,3690,4848,5432,5900,5984,6379,7001,7002,8069,8080,8081,8086,8088,9200,9300,11211,10000,27017,27018,50000,50030,50070 -oN nmap_result.txt
-
-
 ```
 
 ![](img/1594459-20200119150735085-1154381786.png)
@@ -1039,8 +975,6 @@ nmap -T4 -A -v -Pn 192.168.1.1/24 -p 21,22,23,25,80,81,82,83,88,110,143,443,445,
 
 ```
 nmap 127.0.0.1 --script=ftp-brute,imap-brute,smtp-brute,pop3-brute,mongodb-brute,redis-brute,ms-sql-brute,rlogin-brute,rsync-brute,mysql-brute,pgsql-brute,oracle-sid-brute,oracle-brute,rtsp-url-brute,snmp-brute,svn-brute,telnet-brute,vnc-brute,xmpp-brute
-
-
 ```
 
 ![](img/1594459-20200119142721442-1575053305.png)
@@ -1049,8 +983,6 @@ nmap 127.0.0.1 --script=ftp-brute,imap-brute,smtp-brute,pop3-brute,mongodb-brute
 
 ```
 nmap 127.0.0.1 --script=auth,vuln
-
-
 ```
 
 ![](img/1594459-20200119142731949-1278292617.png)
@@ -1059,8 +991,6 @@ nmap 127.0.0.1 --script=auth,vuln
 
 ```
 nmap 127.0.0.1 --script=dns-zone-transfer,ftp-anon,ftp-proftpd-backdoor,ftp-vsftpd-backdoor,ftp-vuln-cve2010-4221,http-backup-finder,http-cisco-anyconnect,http-iis-short-name-brute,http-put,http-php-version,http-shellshock,http-robots.txt,http-svn-enum,http-webdav-scan,iis-buffer-overflow,iax2-version,memcached-info,mongodb-info,msrpc-enum,ms-sql-info,mysql-info,nrpe-enum,pptp-version,redis-info,rpcinfo,samba-vuln-cve-2012-1182,smb-vuln-ms08-067,smb-vuln-ms17-010,snmp-info,sshv1,xmpp-info,tftp-enum,teamspeak2-version
-
-
 ```
 
 #### Masscan
@@ -1121,8 +1051,6 @@ https://fofa.so/
 
 CMS (Content Management System)又称整站系统或文章系统。常见的CMS有Dedecms (织梦)、Discuz、 PHPWEB、 PHPWind、PHPCMS、ECShop、 Dvbbs、 SiteWeaver、 ASPCMS、帝国、Z- Blog、WordPress等。
 
-
-
 ## 第三方平台
 
 云悉 http://www.yunsee.cn/
@@ -1153,9 +1081,6 @@ Github项目
 [TideFinger](https://github.com/TideSec/TideFinger)
 
 [AngelSword](https://github.com/Lucifer1993/AngelSword)
-
-
-
 ```
 
 ![](img/1594459-20200119152155149-1636869790.png)
@@ -1199,9 +1124,6 @@ Github项目
 /WEB-INF/web.xml
 
 Robots.txt
-
-
-
 ```
 
 上述源码泄露在Github上都可以找到相应的利用工具
@@ -1235,9 +1157,6 @@ test
 admin
 user
 sql
-
-
-
 ```
 
 ### 网站备份文件泄露常见后缀
@@ -1255,9 +1174,6 @@ _index.html
 .tar.gz
 .tgz
 .tar
-
-
-
 ```
 
 ### 网站备份文件泄露扫描工具
@@ -1312,9 +1228,6 @@ ihoneyBakFileScan v0.2 多进程批量网站备份文件泄露扫描工具，根
 site:target.com intext:管理 | 后台 | 后台管理 | 登陆 | 登录 | 用户名 | 密码 | 系统 | 账号 | login | system
 site:target.com inurl:login | inurl:admin | inurl:manage | inurl:manager | inurl:admin_login | inurl:system | inurl:backend
 site:target.com intitle:管理 | 后台 | 后台管理 | 登陆 | 登录
-
-
-
 ```
 
 - 上传类漏洞地址
@@ -1322,99 +1235,66 @@ site:target.com intitle:管理 | 后台 | 后台管理 | 登陆 | 登录
 ```
 site:target.com inurl:file
 site:target.com inurl:upload
-
-
-
 ```
 
 - 注入页面
 
 ```
 site:target.com inurl:php?id=
-
-
-
 ```
 
 - 编辑器页面
 
 ```
 site:target.com inurl:ewebeditor
-
-
-
 ```
 
 - 目录遍历漏洞
 
 ```
 site:target.com intitle:index.of
-
-
-
 ```
 
 - SQL错误
 
 ```
 site:target.com intext:"sql syntax near" | intext:"syntax error has occurred" | intext:"incorrect syntax near" | intext:"unexpected end of SQL command" | intext:"Warning: mysql_connect()" | intext:”Warning: mysql_query()" | intext:”Warning: pg_connect()"
-
-
-
 ```
 
 - phpinfo()
 
 ```
 site:target.com ext:php intitle:phpinfo "published by the PHP Group"
-
-
-
 ```
 
 - 配置文件泄露
 
 ```
 site:target.com ext:.xml | .conf | .cnf | .reg | .inf | .rdp | .cfg | .txt | .ora | .ini
-
-
-
 ```
 
 - 数据库文件泄露
 
 ```
 site:target.com ext:.sql | .dbf | .mdb | .db
-
-
-
 ```
 
 - 日志文件泄露
 
 ```
 site:target.com ext:.log
-
-
-
 ```
 
 - 备份和历史文件泄露
 
 ```
 site:target.com ext:.bkf | .bkp | .old | .backup | .bak | .swp | .rar | .txt | .zip | .7z | .sql | .tar.gz | .tgz | .tar
-
-
-
 ```
 
 - 公开文件泄露
 
 ```
 site:target.com filetype:.doc | .docx | .xls | .xlsx | .ppt | .pptx | .odt | .pdf | .rtf | .sxw | .psw | .csv
-
-
-
 ```
 
 - 邮箱信息 
@@ -1423,18 +1303,12 @@ site:target.com filetype:.doc | .docx | .xls | .xlsx | .ppt | .pptx | .odt | .pd
 site:target.com intext:@target.com
 site:target.com 邮件
 site:target.com email
-
-
-
 ```
 
 - 社工信息
 
 ```
 site:target.com intitle:账号 | 密码 | 工号 | 学号 | 身份证
-
-
-
 ```
 
 ![](img/1594459-20200119152425254-1738721113.png)
@@ -1450,9 +1324,6 @@ JSFinder是一款用作快速在网站的js文件中提取URL，子域名的工�
 ```
 pip3 install requests bs4
 git clone https://github.com/Threezh1/JSFinder.git
-
-
-
 ```
 
 - 使用
@@ -1460,9 +1331,6 @@ git clone https://github.com/Threezh1/JSFinder.git
 ```
 python3 JSFinder.py -u http://www.mi.com
 python3 JSFinder.py -u http://www.mi.com -d
-
-
-
 ```
 
 ![](img/1594459-20200119152940819-547890202.png)
@@ -1477,9 +1345,6 @@ python3 JSFinder.py -u http://www.mi.com -d
 git clone https://github.com/GerbenJavado/LinkFinder.git
 cd LinkFinder
 python2 setup.py install
-
-
-
 ```
 
 - 使用
@@ -1488,45 +1353,30 @@ python2 setup.py install
 
 ```
 python linkfinder.py -i https://example.com/1.js -o results.html
-
-
-
 ```
 
 CLI输出（不使用jsbeautifier，这使得它非常快）：
 
 ```
 pyhon linkfinder.py -i https://example.com/1.js -o cli
-
-
-
 ```
 
 分析整个域及其JS文件：
 
 ```
 python linkfinder.py -i https://example.com -d
-
-
-
 ```
 
 Burp输入（在目标中选择要保存的文件，右键单击，Save selected items将该文件作为输入）：
 
 ```
 python linkfinder.py -i burpfile -b
-
-
-
 ```
 
 枚举JavaScript文件的整个文件夹，同时查找以/ api /开头的终结点，并最终将结果保存到results.html：
 
 ```
 python linkfinder.py -i 'Desktop/*.js' -r ^/api/ -o results.html
-
-
-
 ```
 
 ![](img/1594459-20200119153545222-989750205.png)
@@ -1544,9 +1394,6 @@ Fuzz-dirbuster OWASP kali自带
 Fuzz-wfuzz    https://github.com/xmendez/wfuzz
 Test404轻量后台扫描器+v2.0
 御剑
-
-
-
 ```
 
 个人比较喜欢使用Fuzz大法，不管是目录扫描、后台扫描、Web漏洞模糊测试都是非常灵活的。这几款fuzz工具都比较好用
@@ -1555,9 +1402,6 @@ Test404轻量后台扫描器+v2.0
 基于Go开发：gobuster
 基于Java开发：dirbuster
 基于Python开发：wfuzz
-
-
-
 ```
 
 - dirbuster
@@ -1638,9 +1482,6 @@ phantomjs -v
 Ubuntu 16 中安装 phantomjs 出现 QXcbConnection 问题
 	export QT_QPA_PLATFORM=offscreen
 	export QT_QPA_FONTDIR=/usr/share/fonts
-
-
-
 ```
 
 - 使用
@@ -1649,9 +1490,6 @@ Ubuntu 16 中安装 phantomjs 出现 QXcbConnection 问题
 cd webscreenshot/
 
 python2.7 webscreenshot.py -i url.txt
-
-
-
 ```
 
 ![](img/1594459-20200119161002755-701856606.png)
@@ -1666,18 +1504,12 @@ Snitch可以针对指定域自动执行信息收集过程。此工具可帮助�
 
 ```
 git clone https://github.com/Smaash/snitch.git
-
-
-
 ```
 
 - 使用
 
 ```
 python2.7 snitch.py -C "site:whitehouse.gov filetype:pdf" -P 100
-
-
-
 ```
 
 ![](img/1594459-20200119161531465-1731396088.png)
@@ -1686,9 +1518,6 @@ python2.7 snitch.py -C "site:whitehouse.gov filetype:pdf" -P 100
 
 ```
 site:target.com filetype:.doc | .docx | .xls | .xlsx | .ppt | .pptx | .odt | .pdf | .rtf | .sxw | .psw | .csv
-
-
-
 ```
 
 ![](img/1594459-20200119161241851-445496927.png)
@@ -1706,9 +1535,6 @@ git clone https://github.com/m4ll0k/Infoga.git /data/infoga
 cd /data/infoga
 pip3 install requests
 python3 infoga.py
-
-
-
 ```
 
 - 使用
@@ -1717,9 +1543,6 @@ python3 infoga.py
 python3 infoga.py --domain site.com --source all -v 3 | grep Email | cut -d ' ' -f 3 | uniq | sed -n '/-/!p'
 python3 infoga.py --info emailtest@site.com
 python3 infoga.py --info emailtest@site.com -b
-
-
-
 ```
 
 ### Google Hacking
@@ -1728,9 +1551,6 @@ python3 infoga.py --info emailtest@site.com -b
 site:target.com intext:@target.com
 site:target.com 邮件
 site:target.com email
-
-
-
 ```
 
 ![](img/1594459-20200119161412993-1570311002.png)
@@ -1764,3 +1584,4 @@ site:target.com email
 平台地址：`https://www.seebug.org/`
 
 等。。。
+
