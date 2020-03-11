@@ -5,7 +5,6 @@
 ```
  Author：Qftm
  Data：2020/01/18
- ProjectAddress：https://github.com/Qftm/Information_Collection_Handbook
 ```
 
 ## 正文
