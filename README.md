@@ -146,8 +146,8 @@ Table of Contents
         -   [Infoga](#infoga)
         -   [Google Hacking](#google-hacking-2)
 -   [历史漏洞&资产](#历史漏洞资产)
-        -   [历史漏洞](#历史漏洞)
-        -   [历史资产](#历史资产)
+    -   [历史漏洞](#历史漏洞)
+    -   [历史资产](#历史资产)
 
 # 收集域名信息
 
