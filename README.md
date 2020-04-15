@@ -28,6 +28,7 @@ Table of Contents
         -   [myip.ms](#myip.ms)
         -   [TCPIPUTILS](#tcpiputils)
         -   [DNSlytics](#dnslytics-1)
+        -   [Fofa-view](#fofa-view)
 -   [收集相关应用信息](#收集相关应用信息)
     -   [微信公众号&微博](#微信公众号微博)
         -   [天眼查](#天眼查)
@@ -263,6 +264,10 @@ Whois Information
 ### DNSlytics
 
 ![](img/1594459-20200119141656601-1094084026.png)
+
+## fofa-view
+
+![](img/1594459-20200119162240355-550566949.png)
 
 # 收集相关应用信息
 
