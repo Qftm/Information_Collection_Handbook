@@ -30,7 +30,6 @@ Table of Contents
         -   [myip.ms](#myip.ms)
         -   [TCPIPUTILS](#tcpiputils)
         -   [DNSlytics](#dnslytics-1)
-        -   [Fofa-view](#fofa-view)
 -   [收集相关应用信息](#收集相关应用信息)
     -   [微信公众号&微博](#微信公众号微博)
         -   [天眼查](#天眼查)
@@ -99,15 +98,17 @@ Table of Contents
         -   [常用扫描工具使用](#常用扫描工具使用)
             -   [nmap](#nmap-1)
             -   [Masscan](#masscan)
+            -   [Masscan+Nmap](#Masscan+Nmap)
+            -   [masnmapscan](#masnmapscan)
             -   [Zmap](#zmap)
             -   [御剑高速TCP端口扫描工具](#御剑高速tcp端口扫描工具)
             -   [御剑高速端口扫描工具](#御剑高速端口扫描工具)
-            -   [masnmapscan](#masnmapscan)
         -   [网络空间引擎搜索](#网络空间引擎搜索-1)
         -   [浏览器插件](#浏览器插件-1)
             -   [Shodan](#shodan)
             -   [TCPIPUTILS](#tcpiputils-1)
             -   [DNSlytics](#dnslytics-2)
+            -   [Fofa-view](#fofa-view)
 -   [指纹识别](#指纹识别)
     -   [第三方平台](#第三方平台)
     -   [工具](#工具)
@@ -125,8 +126,9 @@ Table of Contents
         -   [网站备份文件泄露常见后缀](#网站备份文件泄露常见后缀)
         -   [网站备份文件泄露扫描工具](#网站备份文件泄露扫描工具)
     -   [Google Hacking](#google-hacking)
-        -   [常用GoogleHacking语法](#常用googlehacking语法)
-        -   [其他GoogleHacking语法](#其他googlehacking语法)
+        -   [GoogleHacking常用语法](#googlehacking常用语法)
+        -   [GoogleHacking其他语法](#googlehacking其他语法)
+        -   [GoogleHackingDatabase](#GoogleHackingDatabase)
         -   [GoogleHacking典型用法](#googlehacking典型用法)
     -   [JS获取敏感接口](#js获取敏感接口)
         -   [JSFinder](#jsfinder)
@@ -149,10 +151,18 @@ Table of Contents
     -   [邮箱信息收集](#邮箱信息收集)
         -   [Infoga](#infoga)
         -   [Google Hacking](#google-hacking-2)
--   [历史漏洞&资产](#历史漏洞资产)
-    -   [历史漏洞](#历史漏洞)
+        -   [Online Search Email](#Online-Search-Email)
     -   [历史资产](#历史资产)
-    	-   [wayback](#wayback)
+        -   [wayback](#wayback)
+-   [漏洞公共资源库](#漏洞公共资源库)
+    -   [国内](#国内)
+    -   [国外](#国外)
+-   [社会工程](#社会工程)
+    -   [SheGongKu](#SheGongKu)
+    -   [UserRegistrationInformation](#UserRegistrationInformation)
+    -   [IPInformation](#IPInformation)
+    -   [SomeProjects](#SomeProjects)
+
 
 # 收集域名信息
 
@@ -193,24 +203,28 @@ IP WHOIS查询 - 站长工具 http://tool.chinaz.com/ipwhois/
 ```
 ICP备案查询网 http://www.beianbeian.com/
 
-ICP备案查询 - 站长工具 http://icp.chinaz.com/
+ICP备案查询-站长工具 http://icp.chinaz.com/
 
-SEO综合查询 - 爱站 https://www.aizhan.com/seo/
+SEO综合查询-爱站 https://www.aizhan.com/seo/
 
-批量查询 - 站长工具 http://icp.chinaz.com/searchs
+批量查询-站长工具 http://icp.chinaz.com/searchs
 
 工业和信息化部ICP/IP/域名信息备案管理 http://www.beian.miit.gov.cn/publish/query/indexFirst.action
+
+美国企业备案查询 https://www.sec.gov/edgar/searchedgar/companysearch.html
 ```
 
 ![](img/1594459-20200119141328662-1538613661.png)
 
 ## 信用信息查询
 
+```
 国家企业信用信息公示系统 http://www.gsxt.gov.cn/index.html
 
-全国企业信息查询 http://company.xizhi.com/
+悉知-全国企业信息查询 http://company.xizhi.com/
 
-个人信用查询搜索-企业信息查询搜索-统一社会信用代码查询-信用中国 https://www.creditchina.gov.cn/
+信用中国-个人信用查询搜索-企业信息查询搜索-统一社会信用代码查询 https://www.creditchina.gov.cn/
+```
 
 ![](img/1594459-20200119141415498-1786131287.png)
 
@@ -266,10 +280,6 @@ Whois Information
 ### DNSlytics
 
 ![](img/1594459-20200119141656601-1094084026.png)
-
-## fofa-view
-
-![](img/1594459-20200119162240355-550566949.png)
 
 # 收集相关应用信息
 
@@ -932,7 +942,9 @@ shodan、FOFA、zoomeye
 ```
 Nmap  
 
-Masscan  
+Masscan
+
+masnmapscan
 
 ZMap  
 
@@ -943,13 +955,11 @@ ZMap
 IISPutScanner
 
 IISPutScanner增强版-DotNetScan v1.1 Beta
-
-masnmapscan
 ```
 
 ### 常用扫描工具使用
 
-#### nmap
+#### Nmap
 
 项目地址：`https://github.com/nmap/nmap`
 
@@ -1016,6 +1026,28 @@ nmap 127.0.0.1 --script=dns-zone-transfer,ftp-anon,ftp-proftpd-backdoor,ftp-vsft
 
 Masscan主要是真对全网进行端口扫描
 
+#### Masscan+Nmap
+
+有些时候网站的入口点属于非常规端口，因此是必须要做全端口扫描，做全端口扫描的时候由于**namp**发包量大经常出现各种问题，如端口扫描不全、获得信息不准等等，为了解决上述问题，这里提供一个**masscan+nmap**结合的方式进行快速扫描。
+
+原理：使用masscan做全端口开放检测，检测出来端口信息后，用nmap进行服务信息识别。
+
+使用：终端输入以下命令执行即可
+
+```
+# masscan 192.33.6.145 -p1-65535  --rate 1000 -oL ports
+
+# ports=$(cat ports | awk -F " " '{print $3}' | sort -n | tr '\n' ','  | sed 's/,$//' | sed 's/^,,//')
+
+# nmap -sV -p $ports 192.33.6.145
+```
+
+#### masnmapscan
+
+项目地址：`https://github.com/hellogoldsnakeman/masnmapscan-V1.0`
+
+masnmapscan整合了masscan和nmap两款扫描器，masscan扫描端口，nmap扫描端口对应服务，二者结合起来实现了又快又好地扫描。并且加入了针对目标资产有防火墙的应对措施。
+
 #### Zmap
 
 项目地址：`https://github.com/zmap/zmap`
@@ -1030,11 +1062,9 @@ Zmap主要是真对全网进行端口扫描
 
 ![](img/1594459-20200119142757545-1040489796.png)
 
-#### masnmapscan
 
-项目地址：`https://github.com/hellogoldsnakeman/masnmapscan-V1.0`
 
-masnmapscan整合了masscan和nmap两款扫描器，masscan扫描端口，nmap扫描端口对应服务，二者结合起来实现了又快又好地扫描。并且加入了针对目标资产有防火墙的应对措施。
+
 
 ### 网络空间引擎搜索
 
@@ -1061,6 +1091,10 @@ https://fofa.so/
 #### DNSlytics.
 
 ![](img/1594459-20200119142839382-1486144346.png)
+
+#### fofa-view
+
+![](img/1594459-20200119162240355-550566949.png)
 
 # 指纹识别
 
@@ -1203,7 +1237,7 @@ ihoneyBakFileScan v0.2 多进程批量网站备份文件泄露扫描工具，根
 
 ## Google Hacking
 
-### 常用GoogleHacking语法
+### GoogleHacking常用语法
 
 1、intext：（仅针对Google有效）
 把网页中的正文内容中的某个字符作为搜索的条件
@@ -1223,7 +1257,7 @@ ihoneyBakFileScan v0.2 多进程批量网站备份文件泄露扫描工具，根
 6、site：
 在指定的(域名)站点搜索相关内容
 
-### 其他GoogleHacking语法
+### GoogleHacking其他语法
 
 1、引号 '' "
 把关键字打上引号后，把引号部分作为整体来搜索
@@ -1236,6 +1270,10 @@ ihoneyBakFileScan v0.2 多进程批量网站备份文件泄露扫描工具，根
 
 4、info
 查找指定站点的一些基本信息
+
+### GoogleHackingDatabase
+
+- [google-hacking-database](https://www.exploit-db.com/google-hacking-database)
 
 ### GoogleHacking典型用法
 
@@ -1590,37 +1628,17 @@ site:target.com email
 
 ![](img/1594459-20200119161412993-1570311002.png)
 
-# 历史漏洞&资产
+### Online Search Email
 
-很多时候去查看目标的历史漏洞和资产信息，往往能够得到很多有价值的信息。
+通过全球最大的几个数据泄露站点在线查询邮箱信息泄露情况
 
-## 历史漏洞
+```
+https://monitor.firefox.com/
 
-- 乌云漏洞库
+https://haveibeenpwned.com/
 
-平台地址：`https://github.com/hanc00l/wooyun_public`
-
-- Exploit-db
-
-平台地址：`https://www.exploit-db.com/`
-
-- Securityfocus
-
-平台地址：`https://www.securityfocus.com/bid`
-
-- Cxsecurity
-
-平台地址：`https://cxsecurity.com/exploit/`
-
-- 国家信息安全漏洞库
-
-平台地址：`http://www.cnnvd.org.cn/`
-
-- Seebug
-
-平台地址：`https://www.seebug.org/`
-
-等。。。
+https://ghostproject.fr/
+```
 
 ## 历史资产
 
@@ -1633,3 +1651,77 @@ wayback会记录网站版本更迭，可以获取到之前版本的网站，可�
 例如：腾讯2003.09.29的主页
 
 ![](img/1594459-20200324091903.png)
+
+# 漏洞公共资源库
+
+通过前期一定的信息收集搜索是否存在相应的历史版本漏洞
+
+## 国内
+
+- [国家信息安全漏洞库](http://www.cnnvd.org.cn/)
+- [国家信息安全漏洞共享平台](https://www.cnvd.org.cn/)
+- [SeeBug](https://www.seebug.org/?ref=www)
+- [信息安全漏洞门户 VULHUB](http://vulhub.org.cn/view/global)
+- [数字观星](https://poc.shuziguanxing.com/#/)
+- [NSFOCUS绿盟科技](http://www.nsfocus.net/index.php?act=sec_bug)
+- [BugScan--漏洞插件社区](http://www.bugscan.net/source/template/vulns/)
+- [漏洞列表 | 教育行业漏洞报告平台（Beta）](https://src.sjtu.edu.cn/list/)
+- [工控系统行业漏洞库平台](http://ivd.winicssec.com/)
+- [exp库-打造中文最大exploit库](http://www.expku.com/)
+- [乌云漏洞库](https://github.com/hanc00l/wooyun_public)
+
+## 国外
+
+- [Exploit-db](https://www.exploit-db.com/)
+- [ Sploitus | Exploit & Hacktool Search Engine](https://sploitus.com/)
+- [packetstorm](https://packetstormsecurity.org/)
+- [SecurityFocus](https://www.securityfocus.com/bid)
+- [cxsecurity](https://cxsecurity.com/exploit/)
+- [rapid7 Vulnerability & Exploit Database](https://www.rapid7.com/db/)
+- [Most recent entries - CVE-Search](https://cve.circl.lu/)
+- [CVE security vulnerability database. Security vulnerabilities, exploits](https://www.cvedetails.com/)
+- [CVE mitre - Search CVE List](https://cve.mitre.org/cve/search_cve_list.html)
+- [美国官方工控数据库 ICS-CERT Landing | CISA](https://www.us-cert.gov/ics)
+- [路由器漏洞搜索 Routerpwn - One click exploits, generators, tools, news, vulnerabilities, poc](http://www.routerpwn.com/)
+
+# 社会工程
+
+## SheGongKu
+
+You should know：TG、AnWang
+
+```
+https://dehashed.com/
+
+https://aleph.occrp.org/
+
+https://www.blackbookonline.info/
+
+http://pwndb2am4tzkvold.onion/
+
+TG-Robot:@shegongkubot
+```
+
+## UserRegistrationInformation
+
+通过用户的一些信息（Mail、Name、ID、Tel）查询用户注册过哪些应用
+
+- [REG007](https://www.reg007.com/)
+- [检查160个社交网络上的注册情况 Check Usernames - Social Media Username Availability](https://checkusernames.com/)
+- [检查用户名注册情况在500个主流网站上 KnowEm用户名搜索：社交媒体，域名和商标](https://knowem.com/)
+- [检查用户名注册情况，同时检查注册过哪些域名 Namechk | Username, Domain, and Trademark Search | Username Registration](https://namechk.com/)
+
+## IPInformation
+
+通过IP地址获取位置信息
+
+- [IP地址查询chaipip](http://chaipip.com/ip.php)
+- [高精度IP定位](https://www.opengps.cn/Data/IP/LocHighAcc.aspx)
+- [IP查询IPIP.NET](https://www.ipip.net/ip.html)
+- [ip2location](https://www.ip2location.com/demo/)
+- [maxmind](https://www.maxmind.com/en/geoip2-precision-demo)
+
+## SomeProjects
+
+- [social-engineer-toolkit](https://github.com/trustedsec/social-engineer-toolkit)
+
