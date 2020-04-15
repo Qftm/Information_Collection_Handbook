@@ -14,7 +14,7 @@
 
 在SRC漏洞挖掘或渗透测试中，信息收集占很大一部分，能收集到别人收集不到的资产，就能挖到别人挖不到的洞。
 
-SRC资产信息收集聚合网站：http://lovebear.top/info/
+感谢：@cckuailong师傅由此项目整理的SRC资产信息收集聚合网站：http://lovebear.top/info/
 
 Table of Contents
 =================
