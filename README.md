@@ -172,27 +172,16 @@ Table of Contents
 
 Whois 简单来说，就是一个用来查询域名是否已经被注册，以及注册域名的详细信息的数据库（如域名所有人、域名注册商、域名注册日期和过期日期、DNS等）。通过域名Whois服务器查询，可以查询域名归属者联系方式，以及注册和到期时间。
 
-```
-Kali下whois查询 https://www.kali.org/downloads/
-
-域名Whois查询 - 站长之家 http://whois.chinaz.com/
-
-Whois 爱站 http://whois.aizhan.com/
-
-ip138 https://site.ip138.com/
-
-Whois Lookup https://www.whois.net/
-
-ICANN Lookup https://lookup.icann.org/
-
-域名信息查询 - 腾讯云https://whois.cloud.tencent.com/domain?domain=
-
-nicolasbouliane http://nicolasbouliane.com/utils/whois/?url=http://baidu.com
-
-新网 whois信息查询 http://whois.xinnet.com/
-
-IP WHOIS查询 - 站长工具 http://tool.chinaz.com/ipwhois/
-```
+- [Kali下whois查询](https://www.kali.org/downloads/)
+- [域名Whois查询 - 站长之家](http://whois.chinaz.com/)
+- [Whois 爱站](http://whois.aizhan.com/)
+- [ip138 ](https://site.ip138.com/)
+- [Whois Lookup ](https://www.whois.net/)
+- [ICANN Lookup ](https://lookup.icann.org/)
+- [域名信息查询 - 腾讯云](https://whois.cloud.tencent.com/domain?domain=)
+- [nicolasbouliane ](http://nicolasbouliane.com/utils/whois/?url=http://baidu.com)
+- [新网 whois信息查询 ](http://whois.xinnet.com/)
+- [IP WHOIS查询 - 站长工具 ](http://tool.chinaz.com/ipwhois/)
 
 ![](img/1594459-20200119141241842-1090421140.png)
 
@@ -200,31 +189,20 @@ IP WHOIS查询 - 站长工具 http://tool.chinaz.com/ipwhois/
 
 国内网站注册需要向国家有关部门申请备案，防止网站从事非法活动，而国外网站不需要备案2333。
 
-```
-ICP备案查询网 http://www.beianbeian.com/
-
-ICP备案查询-站长工具 http://icp.chinaz.com/
-
-SEO综合查询-爱站 https://www.aizhan.com/seo/
-
-批量查询-站长工具 http://icp.chinaz.com/searchs
-
-工业和信息化部ICP/IP/域名信息备案管理 http://www.beian.miit.gov.cn/publish/query/indexFirst.action
-
-美国企业备案查询 https://www.sec.gov/edgar/searchedgar/companysearch.html
-```
+- [ICP备案查询网](http://www.beianbeian.com/)
+- [ICP备案查询-站长工具](http://icp.chinaz.com/)
+- [SEO综合查询-爱站](https://www.aizhan.com/seo/)
+- [批量查询-站长工具](http://icp.chinaz.com/searchs)
+- [工业和信息化部ICP/IP/域名信息备案管理](http://www.beian.miit.gov.cn/publish/query/indexFirst.action)
+- [美国企业备案查询](https://www.sec.gov/edgar/searchedgar/companysearch.html)
 
 ![](img/1594459-20200119141328662-1538613661.png)
 
 ## 信用信息查询
 
-```
-国家企业信用信息公示系统 http://www.gsxt.gov.cn/index.html
-
-悉知-全国企业信息查询 http://company.xizhi.com/
-
-信用中国-个人信用查询搜索-企业信息查询搜索-统一社会信用代码查询 https://www.creditchina.gov.cn/
-```
+- [国家企业信用信息公示系统](http://www.gsxt.gov.cn/index.html)
+- [悉知-全国企业信息查询](http://company.xizhi.com/)
+- [信用中国-个人信用查询搜索-企业信息查询搜索-统一社会信用代码查询](https://www.creditchina.gov.cn/)
 
 ![](img/1594459-20200119141415498-1786131287.png)
 
@@ -234,7 +212,7 @@ SEO综合查询-爱站 https://www.aizhan.com/seo/
 
 #### Dnslytics
 
-Dnslytics地址：https://dnslytics.com/
+- Dnslytics地址：https://dnslytics.com/
 
 利用Dnslytics反查IP可以得到如下信息
 
@@ -283,17 +261,17 @@ Whois Information
 
 # 收集相关应用信息
 
-天眼查 https://www.tianyancha.com/
+- [天眼查](https://www.tianyancha.com/)
 
-企查查 https://www.qichacha.com/
+- [企查查](https://www.qichacha.com/)
 
 ## 微信公众号&微博
 
 ### 天眼查
 
-根据前面获取的企业名称可以获取目标企业的微信公众号、微博、备案站点、软件著作权等信息。
+- [天眼查-商业安全工具](https://www.tianyancha.com/)
 
-天眼查-商业安全工具 https://www.tianyancha.com/
+根据前面获取的企业名称可以获取目标企业的微信公众号、微博、备案站点、软件著作权等信息。
 
 ![](img/1594459-20200119141713825-233472966.png)
 
@@ -309,7 +287,7 @@ Whois Information
 
 ### 七麦数据
 
-https://www.qimai.cn/
+- [七麦数据](https://www.qimai.cn/)
 
 通过当前APP查询同开发商应用，得到目标所有APP应用
 
@@ -317,7 +295,7 @@ https://www.qimai.cn/
 
 ### AppStore
 
-https://apps.apple.com/
+- [AppStore](https://apps.apple.com/)
 
 通过当前APP查询同开发商应用，得到目标所有APP应用
 
@@ -333,35 +311,33 @@ https://apps.apple.com/
 
 主要是一些第三方网站和一些博主提供的服务
 
-```
-ip138 https://site.ip138.com/
+- [ip138](https://site.ip138.com/)
 
-站长工具 http://tool.chinaz.com/subdomain/?domain=
+- [站长工具](http://tool.chinaz.com/subdomain/?domain=)
 
-hackertarget https://hackertarget.com/find-dns-host-records/
+- [hackertarget](https://hackertarget.com/find-dns-host-records/)
 
-phpinfo https://phpinfo.me/domain/
+- [phpinfo](https://phpinfo.me/domain/)
 
-t1h2ua https://www.t1h2ua.cn/tools/
+- [t1h2ua](https://www.t1h2ua.cn/tools/)
 
-dnsdumpster https://dnsdumpster.com/
+- [dnsdumpster](https://dnsdumpster.com/)
 
-chinacycc https://d.chinacycc.com/
+- [chinacycc](https://d.chinacycc.com/)
 
-zcjun http://z.zcjun.com/
-```
+- [zcjun](http://z.zcjun.com/)
 
 ### 权重综合查询
 
-爱站 https://www.aizhan.com/seo/
+- [爱站](https://www.aizhan.com/seo/)
 
-站长工具 http://rank.chinaz.com/all/
+- [站长工具](http://rank.chinaz.com/all/)
 
 ![](img/1594459-20200119141832218-1345938531.png)
 
 ### 全国政府网站基本数据库
 
-http://114.55.181.28/databaseInfo/index
+- [Address Link](http://114.55.181.28/databaseInfo/index)
 
 ![](img/1594459-20200119141843251-1646076497.png)
 
@@ -369,13 +345,9 @@ http://114.55.181.28/databaseInfo/index
 
 IP关联域名，大部分网站一个IP多个域名
 
-```
-http://s.tool.chinaz.com/same?s
-
-http://dns.aizhan.com/
-
-https://webscan.cc/
-```
+- [chinaz](http://s.tool.chinaz.com/same?s)
+- [aizhan](http://dns.aizhan.com/)
+- [webscan.cc](https://webscan.cc/)
 
 ## 资产搜索引擎
 
@@ -393,7 +365,7 @@ site:baidu.com
 
 ### FOFA语法查询
 
-https://fofa.so/
+- [fofa.so](https://fofa.so/)
 
 搜索子域名 "domain:xxxxx"
 
@@ -464,11 +436,9 @@ Sublist3r也是一个比较常用的工具， 它能列举多种资源，如在G
 
 ### 在线第三方平台查询
 
-```
-crt.sh: https://crt.sh
-censys: https://censys.io
-myssl：https://myssl.com
-```
+- [crt.sh](https://crt.sh)
+- [censys](https://censys.io)
+- [myssl](https://myssl.com)
 
 ```
 crt:
@@ -521,9 +491,9 @@ Virustotal with apikey
 
 ## DNS历史解析
 
-dnsdb https://www.dnsdb.io
+- [dnsdb](https://www.dnsdb.io)
 
-viewdns https://viewdns.info/
+- [viewdns](https://viewdns.info/)
 
 ## DNS域传送漏洞
 
@@ -726,13 +696,11 @@ C:\Users\Qftm>nslookup www.dfle.com.cn 114.114.114.114
 
 在线网址
 
-```
-Ping检测-站长工具 http://ping.chinaz.com/
+- [Ping检测-站长工具](http://ping.chinaz.com/)
 
-17CE https://www.17ce.com/
+- [17CE](https://www.17ce.com/)
 
-ipip https://tools.ipip.net/newping.php (支持国内、国外)
-```
+- [ipip (支持国内、国外)](https://tools.ipip.net/newping.php)
 
 #### 站长工具
 
@@ -756,7 +724,7 @@ ipip https://tools.ipip.net/newping.php (支持国内、国外)
 
 #### Cdnplanet
 
-cdnplanet https://www.cdnplanet.com/tools/cdnfinder/ （查询可能比较慢）
+- [cdnplanet](https://www.cdnplanet.com/tools/cdnfinder/) （查询可能比较慢）
 
 ![](img/1594459-20200119142452928-266810115.png)
 
@@ -780,11 +748,9 @@ cdnplanet https://www.cdnplanet.com/tools/cdnfinder/ （查询可能比较慢）
 
 国际ping测试站点
 
-```
-ipip https://tools.ipip.net/newping.php
+- [ipip](https://tools.ipip.net/newping.php)
 
-ASM https://asm.ca.com/en/ping.php
-```
+- [ASM](https://asm.ca.com/en/ping.php)
 
 测试站点：`www.yeah.net`
 
@@ -792,7 +758,7 @@ ASM https://asm.ca.com/en/ping.php
 
 #### 国外DNS解析
 
-世界各地DNS服务器地址大全：`http://www.ab173.com/dns/dns_world.php`
+- [世界各地DNS服务器地址大全](http://www.ab173.com/dns/dns_world.php)
 
 测试站点：`www.yeah.net`
 
@@ -806,7 +772,7 @@ ASM https://asm.ca.com/en/ping.php
 
 #### 分站域名
 
-具体见上面**<收集子域名信息>**部分
+具体见上面 **<收集子域名信息>** 部分
 
 ![](img/1594459-20200119142552726-920748840.png)
 
@@ -858,17 +824,15 @@ phpinfo、test等
 
 在线网站查询
 
-```
-dnsdb https://www.dnsdb.io
+- [dnsdb](https://www.dnsdb.io)
 
-NETCRAFT https://sitereport.netcraft.com/?url=
+- [NETCRAFT](https://sitereport.netcraft.com/?url=)
 
-viewdns https://viewdns.info/
+- [viewdns](https://viewdns.info/)
 
-threatbook https://x.threatbook.cn/
+- [threatbook](https://x.threatbook.cn/)
 
-securitytrails https://securitytrails.com/
-```
+- [securitytrails](https://securitytrails.com/)
 
 ![](img/1594459-20200119142656200-2052041466.png)
 
@@ -1062,17 +1026,13 @@ Zmap主要是真对全网进行端口扫描
 
 ![](img/1594459-20200119142757545-1040489796.png)
 
-
-
-
-
 ### 网络空间引擎搜索
 
 shodan、FOFA、zoomeye
 
 FOFA为例
 
-https://fofa.so/
+- [fofa.so](https://fofa.so/)
 
 ![](img/1594459-20200119142808985-1292014262.png)
 
@@ -1104,13 +1064,13 @@ CMS (Content Management System)又称整站系统或文章系统。常见的CMS�
 
 ## 第三方平台
 
-云悉 http://www.yunsee.cn/
+- [云悉](http://www.yunsee.cn/)
 
-TideFinger http://finger.tidesec.net/
+- [TideFinger](http://finger.tidesec.net/)
 
-BugScaner http://whatweb.bugscaner.com/look/
+- [BugScaner](http://whatweb.bugscaner.com/look/)
 
-数字观星 https://fp.shuziguanxing.com/#/
+- [数字观星](https://fp.shuziguanxing.com/#/)
 
 ![](img/1594459-20200119142854987-277705405.png)
 
@@ -1122,17 +1082,15 @@ BugScaner http://whatweb.bugscaner.com/look/
 
 Github项目
 
-```
-[CMSeeK](https://github.com/Tuhinshubhra/CMSeeK)
+- [CMSeeK](https://github.com/Tuhinshubhra/CMSeeK)
 
-[CMSmap](https://github.com/Dionach/CMSmap)
+- [CMSmap](https://github.com/Dionach/CMSmap)
 
-[ACMSDiscovery](https://github.com/aedoo/ACMSDiscovery)
+- [ACMSDiscovery](https://github.com/aedoo/ACMSDiscovery)
 
-[TideFinger](https://github.com/TideSec/TideFinger)
+- [TideFinger](https://github.com/TideSec/TideFinger)
 
-[AngelSword](https://github.com/Lucifer1993/AngelSword)
-```
+- [AngelSword](https://github.com/Lucifer1993/AngelSword)
 
 ![](img/1594459-20200119152155149-1636869790.png)
 
@@ -1152,7 +1110,7 @@ Github项目
 
 ### wafw00f
 
-项目地址：https://github.com/EnableSecurity/wafw00f
+- 项目地址：https://github.com/EnableSecurity/wafw00f
 
 ![](img/1594459-20200119142930233-1332790706.png)
 
@@ -1185,11 +1143,11 @@ Robots.txt
 
 ### 源码泄露利用工具
 
-.git源码泄露：https://github.com/lijiejie/GitHack
+- .git源码泄露：https://github.com/lijiejie/GitHack
 
-.DS_Store泄露：https://github.com/lijiejie/ds_store_exp
+- .DS_Store泄露：https://github.com/lijiejie/ds_store_exp
 
-.bzr、CVS、.svn、.hg源码泄露：https://github.com/kost/dvcs-ripper
+- .bzr、CVS、.svn、.hg源码泄露：https://github.com/kost/dvcs-ripper
 
 ## 备份文件泄露
 
@@ -1519,21 +1477,21 @@ GitCafe一个基于代码托管服务打造的技术协作与分享平台
 
 ### 小白盘搜索
 
-地址：https://www.xiaobaipan.com/
+- 地址：https://www.xiaobaipan.com/
 
 ### 大力盘搜索
 
-地址：https://www.dalipan.com/
+- 地址：https://www.dalipan.com/
 
 ### 小不点搜索（微盘）
 
-地址：https://www.xiaoso.net/
+- 地址：https://www.xiaoso.net/
 
 ![](img/1594459-20200324083040.png)
 
 ### 百度网盘爬取开源工具
 
-地址：https://github.com/gudegg/yunSpider
+- 地址：https://github.com/gudegg/yunSpider
 
 ## 网站截图        
 
