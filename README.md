@@ -5,7 +5,8 @@
 ```
  Author：Qftm
  Data：2020/01/18
- Link：https://github.com/Qftm/Information_Collection_Handbook
+ ProjectAddress：https://github.com/Qftm/Information_Collection_Handbook
+ GitbookAddress：https://qftm.github.io/Information_Collection_Handbook/ 
 ```
 
 ## 正文
@@ -13,6 +14,10 @@
 "只有不努力的黑客，没有攻不破的系统"。
 
 在SRC漏洞挖掘或渗透测试中，信息收集占很大一部分，能收集到别人收集不到的资产，就能挖到别人挖不到的洞。
+
+项目已整理Gitbook文档，方便阅览：[Information Collection Handbook](https://qftm.github.io/Information_Collection_Handbook/ )
+
+![image-20200417210840456](img/image-20200417210840456.png)
 
 感谢：@cckuailong师傅由此项目整理的SRC资产信息收集聚合网站：http://lovebear.top/info/
 
