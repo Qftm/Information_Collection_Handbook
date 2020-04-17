@@ -261,8 +261,9 @@ Whois Information
 # 收集相关应用信息
 
 - [天眼查](https://www.tianyancha.com/)
-
 - [企查查](https://www.qichacha.com/)
+- [七麦数据](https://www.qimai.cn/)
+- [AppStore](https://apps.apple.com/)
 
 ## 微信公众号&微博
 
@@ -1103,6 +1104,8 @@ Github项目
 
 # 收集敏感信息
 
+对应站点和应用敏感信息收集的越多，后续攻击利用突破口越多。
+
 ## WAF识别
 
 识别网站使用的什么WAF，可以去找相应的绕过手段
@@ -1444,6 +1447,8 @@ GitHub敏感信息泄露一直是企业信息泄露和知识产权泄露的重�
 
 Github泄露扫描系统开发：https://sec.xiaomi.com/article/37
 
+GitHub敏感信息泄露监控：[GSIL](https://github.com/FeeiCN/GSIL)、[Github-Monitor](https://github.com/VKSRC/Github-Monitor)
+
 在GitHub中一般通过搜索网站域名、网站JS路径、网站备案、网站下的技术支持等进行敏感信息查询
 
 ![](img/1594459-20200119162240355-550566948.png)
@@ -1643,6 +1648,8 @@ wayback会记录网站版本更迭，可以获取到之前版本的网站，可�
 
 # 社会工程
 
+> 世界第一黑客凯文·米特尼克在《反欺骗的艺术》中曾提到，人为因素才是安全的软肋。很多企业、公司在信息安全上投入大量的资金，最终导致数据泄露的原因，往往却是发生在人本身。你们可能永远都想象不到，对于黑客们来说，通过一个用户名、一串数字、一串英文代码，社会工程师就可以通过这么几条的线索，通过社工攻击手段，加以筛选、整理，就能把你的所有个人情况信息、家庭状况、兴趣爱好、婚姻状况、你在网上留下的一切痕迹等个人信息全部掌握得一清二楚。虽然这个可能是最不起眼，而且还是最麻烦的方法。一种无需依托任何黑客软件，更注重研究人性弱点的黑客手法正在兴起，这就是社会工程学黑客技术。
+
 ## SheGongKu
 
 You should know：TG、AnWang
@@ -1677,6 +1684,8 @@ TG-Robot:@shegongkubot
 - [IP查询IPIP.NET](https://www.ipip.net/ip.html)
 - [ip2location](https://www.ip2location.com/demo/)
 - [maxmind](https://www.maxmind.com/en/geoip2-precision-demo)
+- [ip138](https://www.ip138.com/)
+- [ip.cn](https://ip.cn/)
 
 ## SomeProjects
 
